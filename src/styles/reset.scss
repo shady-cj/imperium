@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    color: white;
+    font-family: $primary_font_regular;
+    background-color: $primary_color;
+}
+
+html {
+    font-size: 1rem;
+}
+
+body,
+html {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: red;
+}

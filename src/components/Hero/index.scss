@@ -1,0 +1,77 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.hero-container {
+    background-image: url('/assets/bg-pattern.png');
+    background-repeat: no-repeat;
+    background-position: 63% center;
+    background-size: 75% auto;
+    min-height: 85vh;
+    padding-top: 5rem;
+
+    .hero-heading__text {
+
+        h3 {
+            font-size: 4rem;
+            font-family: $primary_font_medium;
+            font-weight: 500;
+            color: #E9F2FB;
+        }
+
+        :nth-child(2) {
+            background: linear-gradient(180.36deg, #E9F2FB 41.81%, #4d5f72 73.11%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        :nth-child(3) {
+            color: $tertiary_color;
+        }
+
+    }
+
+    .hero-paragraph__text {
+        padding-top: 1rem;
+
+        p {
+            font-size: 1.125rem;
+            font-family: $secondary_font_regular;
+            line-height: 2rem;
+            color: #CCCCCC;
+
+
+        }
+    }
+
+    .hero-contact {
+        padding-top: 2.5rem;
+
+        .start-a-project {
+            @include schedule-btn;
+            background: $tertiary_color;
+            margin-left: 0;
+            color: #0B2541;
+            font-size: 17px;
+            line-height: 21.67px;
+            padding: 10px 16px;
+            cursor: pointer;
+
+            img {
+                width: 12px;
+                height: auto;
+                transform: translateY(2px);
+                margin-left: 3px;
+            }
+
+        }
+
+        .schedule-a-call {
+            @include schedule-btn;
+            cursor: pointer;
+            margin-left: 20px;
+            padding: 10px 16px;
+        }
+
+    }
+}

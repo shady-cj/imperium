@@ -1,0 +1,12 @@
+@mixin schedule-btn {
+    margin-left: 3.5rem;
+    border-radius: 8px;
+    padding: 10px 8px;
+    border: 1px solid #05101C;
+    background: linear-gradient(0deg, #05101C, #05101C),
+        linear-gradient(0deg, #030B13, #030B13);
+    font-size: 1rem;
+    line-height: 1.275;
+    font-family: $secondary_font_medium;
+    color: $tertiary_color_tint;
+}
