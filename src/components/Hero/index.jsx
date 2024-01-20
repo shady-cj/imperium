@@ -19,7 +19,7 @@ const index = () => {
             </div>
             <div className="hero-contact">
                 <a className="start-a-project">Start a Project <img src={arrowLeft} alt="" /></a>
-                <a className="schedule-a-call">Schedule a call</a>
+                <a className="schedule-a-call">Schedule a Call</a>
             </div>
 
         </div>
