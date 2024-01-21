@@ -1,0 +1,157 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.benefit-container {
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+
+    .benefit-content-header {
+        @include section-content-header;
+
+        h2 {
+            font-family: $primary_font_regular;
+            font-weight: 400;
+        }
+    }
+
+    .benefit-cards {
+        margin-top: 4rem;
+        display: flex;
+        flex-flow: row wrap;
+        gap: 1.5rem;
+
+        article.fast-time-card {
+            padding: 24px 20px 16px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            border-radius: 16px;
+            border: 1px solid #15191F;
+            flex-basis: 30%;
+            overflow: hidden;
+
+            background: linear-gradient(0deg, #060A0F, #060A0F),
+                linear-gradient(180deg, #15191F 0%, #070F17 100%);
+
+            h4 {
+                font-family: $primary_font_regular;
+                font-weight: 400;
+                font-size: 1.25rem;
+                line-height: 1.71rem;
+                color: #F5F5F5;
+            }
+
+            p {
+                font-family: $secondary_font_regular;
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 2rem;
+                color: #A2A6AB;
+                letter-spacing: 0.24px;
+                margin-top: 0.5rem;
+            }
+
+            .time-wrapper {
+                padding: 24px 20px;
+                display: flex;
+                justify-content: space-between;
+                border-radius: 1rem;
+                background: linear-gradient(0deg, #020509, #020509),
+                    linear-gradient(0deg, #061525, #061525);
+                position: relative;
+
+                .blur-circle {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100px;
+                    height: 100px;
+                    z-index: 3;
+                    background-color: $tertiary_color;
+                    filter: blur(150px);
+                }
+
+                div {
+
+
+                    h5 {
+                        font-size: 2rem;
+                        margin-bottom: 12px;
+                        font-family: $satoshi;
+                        font-weight: 500;
+
+                    }
+
+                    span {
+                        font-size: 1.25rem;
+                        text-decoration: line-through;
+                        color: #B3B3B3;
+                        font-family: $satoshi;
+                        font-weight: 500;
+                    }
+                }
+
+                img {
+                    width: 83.2px;
+                    height: auto;
+
+                    // aspect-ratio: 1/1;
+                }
+
+            }
+        }
+
+        article.responsive-dev {
+            border-radius: 16px;
+            border: 1px solid #15191F;
+            background: #060A0F;
+            padding-top: 24px;
+            padding-left: 20px;
+            display: flex;
+            // gap: 30px;
+            overflow: hidden;
+            flex: 1;
+
+            position: relative;
+
+            .blur-circle-2 {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 200px;
+                height: 200px;
+                background-color: $tertiary_color;
+
+                border-radius: 50%;
+                filter: blur(350px);
+            }
+
+            .responsive-dev-content {
+                h4 {
+                    font-family: $primary_font_regular;
+                    font-size: 1.25rem;
+                    font-weight: 400;
+                    color: #F5F5F5;
+                }
+
+                p {
+                    font-family: $secondary_font_regular;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    line-height: 2rem;
+                    letter-spacing: 0.24px;
+                    color: #A2A6AB;
+                    margin-top: 0.5rem;
+                }
+            }
+
+            img {
+                width: 27.2rem;
+                height: auto;
+                border-radius: 0.6rem;
+                transform: translate(1.88rem, 2.2rem);
+            }
+        }
+
+    }
+}

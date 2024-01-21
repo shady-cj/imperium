@@ -4,7 +4,7 @@ import arrowUp from "../../assets/arrow-up-left.svg";
 
 const index = ({ icon, h2Content, pContent }) => {
   return (
-    <article>
+    <article className="service-card">
       <div>
 
         <div className="card-icon">
