@@ -4,15 +4,16 @@
 .hero-container {
     background-image: url('/assets/bg-pattern.png');
     background-repeat: no-repeat;
-    background-position: 63% center;
+    background-position: center -10%;
     background-size: 75% auto;
+    // background-size: cover;
     min-height: 85vh;
     padding-top: 5rem;
 
     .hero-heading__text {
 
         h3 {
-            font-size: 4rem;
+            font-size: 3.5rem;
             font-family: $primary_font_medium;
             font-weight: 500;
             color: #E9F2FB;
@@ -118,7 +119,7 @@
 
     .hero-video {
         width: 100%;
-        padding-top: 8.4rem;
+        padding-top: 5rem;
 
         video {
             width: 100%;
