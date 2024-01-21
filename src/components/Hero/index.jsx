@@ -26,7 +26,7 @@ const index = () => {
                     <a className="schedule-a-call">Schedule a Call</a>
                 </div>
                 <div className="hero-testimony-section">
-                    <img src={bobPics} alt="" />
+                    <img src={bobPics} loading="lazy" alt="Bob" />
                     <div className="hero-testimony-info">
                         <span>Bob Robson, Owner @Enver Flooring</span>
                         <span>Their design magic transformed our website into a conversion machine! We saw a 20% increase in sales within 3 months.</span>
