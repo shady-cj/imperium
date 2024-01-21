@@ -46,6 +46,12 @@
 
     .hero-contact {
         padding-top: 2.5rem;
+        display: flex;
+        justify-content: space-between;
+
+        // :first-child {
+        //     flex: 1;
+        // }
 
         .start-a-project {
             @include schedule-btn;
@@ -73,5 +79,53 @@
             padding: 10px 16px;
         }
 
+        .hero-testimony-section {
+            display: flex;
+            flex-basis: 40%;
+            gap: 1rem;
+
+            img {
+                width: 3.5rem;
+                height: 3.5rem;
+                border: 1px solid #164B84;
+                aspect-ratio: 1;
+                object-fit: cover;
+                object-position: 100% 0%;
+                border-radius: 50%;
+            }
+
+            .hero-testimony-info {
+                display: flex;
+                flex-flow: column wrap;
+                gap: 0.75rem;
+
+                :first-child {
+                    font-size: 0.875rem;
+                    line-height: 1.2rem;
+                    color: #B3B3B3;
+                }
+
+                :last-child {
+                    color: #E6E6E6;
+                    font-family: $secondary_font_regular;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                }
+            }
+        }
+
+    }
+
+    .hero-video {
+        width: 100%;
+        padding-top: 8.4rem;
+
+        video {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 12px;
+            aspect-ratio: 15/8;
+        }
     }
 }
