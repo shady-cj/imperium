@@ -1,0 +1,80 @@
+@import "../../styles/variables";
+
+article {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    flex: 1;
+    // gap: 0.5rem;
+    padding: 1.5rem 1.25rem;
+    border-radius: 1rem;
+    border: 1px solid #15191F;
+    background: #060A0F;
+    aspect-ratio: 1/2;
+    max-height: 28rem;
+
+
+    .card-icon {
+        width: 3.5rem;
+        height: 3.5rem;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #141310;
+        border-radius: 50%;
+
+        img {
+            width: 24px;
+            height: 24px;
+
+        }
+    }
+
+    .card-content {
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 500;
+            font-family: $primary_font_medium;
+            color: #F5F5F5;
+            text-align: left;
+        }
+
+        p {
+            color: #A2A6AB;
+            font-family: $secondary_font_regular;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 2rem;
+            letter-spacing: 0.24px;
+        }
+    }
+
+    a {
+        padding: 0.375rem 0.5rem;
+        display: flex;
+        width: fit-content;
+        gap: 8px;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 8px;
+        background: #141310;
+        color: $tertiary_color;
+        justify-self: flex-end;
+
+        div {
+            width: 1.25rem;
+            height: 1.2rem;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 1rem;
+                height: 1rem;
+            }
+        }
+
+    }
+}
