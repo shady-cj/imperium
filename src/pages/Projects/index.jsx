@@ -41,13 +41,13 @@ const index = () => {
                     <img src={valueIndustry} alt="" loading="lazy" />
                 </div>
                 <div className="project-display-card">
-                    <img src={epicEats} alt="" />
+                    <img src={epicEats} alt="" loading="lazy" />
                     <ProjectCard tags={projectContents[1].tags} title={projectContents[1].title} description={projectContents[1].description} />
 
                 </div>
                 <div className="project-display-card">
                     <ProjectCard tags={projectContents[2].tags} title={projectContents[2].title} description={projectContents[2].description} />
-                    <img src={nftsvg} alt="" />
+                    <img src={nftsvg} alt="" loading="lazy" />
                 </div>
 
             </div>
