@@ -11,7 +11,7 @@
     border: 1px solid #15191F;
     background: #060A0F;
     aspect-ratio: 1/2;
-    max-height: 28rem;
+    max-height: 25rem;
 
 
     .card-icon {
@@ -31,6 +31,8 @@
     }
 
     .card-content {
+        transform: translateY(2rem);
+
         h2 {
             font-size: 1.25rem;
             font-weight: 500;
@@ -42,10 +44,11 @@
         p {
             color: #A2A6AB;
             font-family: $secondary_font_regular;
-            font-size: 1rem;
+            font-size: 0.9rem;
             font-weight: 400;
             line-height: 2rem;
             letter-spacing: 0.24px;
+            margin-top: 0.5rem
         }
     }
 
