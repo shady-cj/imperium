@@ -1,0 +1,53 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.process-card {
+    border-radius: 16px;
+    border: 1px solid #15191F;
+    background: #060A0F;
+    padding: 1.5rem 1.25rem;
+
+    .step {
+        display: flex;
+        padding: 3px 8px;
+        align-items: center;
+        gap: 8px;
+        border-radius: 1rem;
+        border: 0.5px solid #16273D;
+        background: #12171E;
+        width: fit-content;
+
+        :first-child {
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 50%;
+            background-color: $tertiary_color;
+        }
+
+        :last-child {
+            color: $tertiary_color;
+            font-family: $secondary_font_regular;
+            font-size: 0.875rem;
+            font-weight: 400;
+            letter-spacing: 0.14px;
+        }
+    }
+
+    h2 {
+        margin-top: 2rem;
+        color: #F3FCFF;
+        font-family: $primary_font_regular;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    p {
+        margin-top: 1rem;
+        color: #A2A6AB;
+        font-family: $secondary_font_regular;
+        font-size: 0.9rem;
+        font-weight: 400;
+        line-height: 2rem;
+        letter-spacing: 0.16px;
+    }
+}
