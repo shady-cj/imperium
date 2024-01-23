@@ -1,0 +1,136 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+
+.pricing-card {
+    padding: 1.5rem 1.25rem;
+    display: flex;
+    width: 368px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    border-radius: 1rem;
+    border: 0.5px solid #15191F;
+    background: #060A0F;
+    justify-content: space-between;
+
+    .pricing-card-title {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        :first-child {
+            h4 {
+                color: #FFF;
+                font-family: $primary_font_regular;
+                font-size: 1rem;
+                font-weight: 400;
+            }
+
+            span {
+                margin-top: 0.5rem;
+                display: inline-block;
+                color: #CCC;
+                font-family: $satoshi;
+                font-size: 2rem;
+                font-weight: 500;
+            }
+
+        }
+
+        &>:last-child {
+            padding: 3px 8px;
+            min-width: 38%;
+            display: flex;
+            gap: 8px;
+            height: fit-content;
+            border-radius: 16px;
+            border: 0.5px solid #16273D;
+            background: #12171E;
+            align-items: center;
+
+            :first-child {
+                display: inline-block;
+                width: 0.5rem;
+                height: 0.5rem;
+                background-color: #164B84;
+                border-radius: 50%;
+
+            }
+
+            :last-child {
+                color: #B3B3B3;
+                font-family: $secondary_font_regular;
+                font-size: 0.875rem;
+                font-weight: 400;
+                letter-spacing: 0.14px;
+            }
+        }
+
+    }
+
+    &>p {
+        color: #A2A6AB;
+        font-family: $secondary_font_regular;
+        font-size: 0.9rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2rem;
+        /* 200% */
+        letter-spacing: 0.16px;
+    }
+
+    .pricing-package {
+        h6 {
+            color: #CCC;
+            font-family: $secondary_font_regular;
+            font-size: 0.875rem;
+            font-weight: 400;
+        }
+
+        .pricing-package-benefit {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 1.125rem;
+
+            div {
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+
+                :first-child {
+                    width: 1rem;
+                    height: 1rem;
+                    border-radius: 50%;
+                    background: #081B2F;
+                }
+
+                :last-child {
+                    color: #D3E5F8;
+                    font-family: $secondary_font_regular;
+                    font-size: 0.9rem;
+                    font-weight: 400;
+                    letter-spacing: 0.16px;
+                }
+
+            }
+        }
+    }
+
+    &>button {
+        display: flex;
+        padding: 10px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        border-radius: 8px;
+        background: #E5BB45;
+        border: none;
+        color: #0B2541;
+        font-family: $secondary_font_medium;
+        font-size: 17px;
+        font-weight: 500;
+        letter-spacing: 0.085px;
+    }
+}

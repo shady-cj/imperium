@@ -1,0 +1,17 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.pricing-container {
+    margin-top: 7.5rem;
+    padding: 0 1rem;
+
+    .pricing-content-header {
+        @include section-content-header;
+    }
+
+    .pricing-display {
+        margin-top: 4.5rem;
+        display: flex;
+        gap: 1.25rem;
+    }
+}

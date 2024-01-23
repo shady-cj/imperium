@@ -23,7 +23,7 @@
             flex-direction: column;
             gap: 2rem;
             border-radius: 16px;
-            border: 1px solid #15191F;
+            border: 0.5px solid #15191F;
             flex-basis: 30%;
             overflow: hidden;
 
@@ -100,7 +100,7 @@
 
         article.responsive-dev {
             border-radius: 16px;
-            border: 1px solid #15191F;
+            border: 0.5px solid #15191F;
             background: $secondary_color;
             padding-top: 24px;
             padding-left: 20px;
@@ -156,7 +156,7 @@
             background: linear-gradient(0deg, $secondary_color, $secondary_color),
                 linear-gradient(0deg, #15191F, #15191F);
 
-            border: 1px solid #15191F;
+            border: 0.5px solid #15191F;
             // min-height: 22rem;
             border-radius: 1rem;
             padding: 0 1.23rem;
@@ -237,7 +237,7 @@
             padding: 1.5rem 1.25rem;
             flex-basis: 31.58%;
             border-radius: 1rem;
-            border: 1px solid #15191F;
+            border: 0.5px solid #15191F;
             background: linear-gradient(0deg, $secondary_color, $secondary_color),
                 linear-gradient(0deg, #15191F, #15191F);
             position: relative;
@@ -289,7 +289,7 @@
                 z-index: 1;
                 height: 11.6rem;
                 border-radius: 1rem;
-                border: 2px solid #061525;
+                border: 1px solid #061525;
                 background: linear-gradient(0deg, #020509, #020509),
                     linear-gradient(0deg, #061525, #061525);
                 padding: 0.25rem;
@@ -313,7 +313,7 @@
                         font-weight: 400;
                         letter-spacing: 0.14px;
                         border-radius: 1rem;
-                        border: 1px solid #151A1F;
+                        border: 0.5px solid #151A1F;
                         background: #010305;
                         margin-right: 1rem;
                     }
@@ -351,7 +351,7 @@
             padding: 1.5rem 1.25rem;
             flex-basis: 31.58%;
             border-radius: 1rem;
-            border: 1px solid #15191F;
+            border: 0.5px solid #15191F;
             background: linear-gradient(0deg, $secondary_color, $secondary_color),
                 linear-gradient(0deg, #15191F, #15191F);
             position: relative;
@@ -393,7 +393,7 @@
                 margin-top: -2rem;
                 padding: 1rem 1.25rem;
                 border-radius: 16px;
-                border: 1px solid #061525;
+                border: 0.5px solid #061525;
                 background: #020509;
                 position: relative;
                 z-index: 1;
@@ -415,7 +415,7 @@
                         align-items: center;
                         gap: 4px;
                         border-radius: 16px;
-                        border: 1px solid #151A1F;
+                        border: 0.5px solid #151A1F;
                         background: #010305;
                         width: fit-content;
 
