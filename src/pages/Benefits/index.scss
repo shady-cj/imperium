@@ -8,10 +8,6 @@
     .benefit-content-header {
         @include section-content-header;
 
-        h2 {
-            font-family: $primary_font_regular;
-            font-weight: 400;
-        }
     }
 
     .benefit-cards {
@@ -19,7 +15,7 @@
         display: flex;
         flex-flow: row wrap;
         gap: 1.5rem;
-        padding: 0 3rem;
+        padding: 0 4rem;
 
         article.fast-time-card {
             padding: 24px 20px 16px 20px;
@@ -31,7 +27,7 @@
             flex-basis: 30%;
             overflow: hidden;
 
-            background: linear-gradient(0deg, #060A0F, #060A0F),
+            background: linear-gradient(0deg, $secondary_color, $secondary_color),
                 linear-gradient(180deg, #15191F 0%, #070F17 100%);
 
             h4 {
@@ -105,7 +101,7 @@
         article.responsive-dev {
             border-radius: 16px;
             border: 1px solid #15191F;
-            background: #060A0F;
+            background: $secondary_color;
             padding-top: 24px;
             padding-left: 20px;
             display: flex;
@@ -155,9 +151,9 @@
         }
 
         article.loading-time {
-            flex-basis: 31.6%;
+            flex-basis: 31.58%;
             position: relative;
-            background: linear-gradient(0deg, #060A0F, #060A0F),
+            background: linear-gradient(0deg, $secondary_color, $secondary_color),
                 linear-gradient(0deg, #15191F, #15191F);
 
             border: 1px solid #15191F;
@@ -195,7 +191,7 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    gap: 0.25rem;
+                    gap: 0.3rem;
 
                     img {
                         width: 4rem;
@@ -239,10 +235,10 @@
 
         article.revisions {
             padding: 1.5rem 1.25rem;
-            flex-basis: 31.6%;
+            flex-basis: 31.58%;
             border-radius: 1rem;
             border: 1px solid #15191F;
-            background: linear-gradient(0deg, #060A0F, #060A0F),
+            background: linear-gradient(0deg, $secondary_color, $secondary_color),
                 linear-gradient(0deg, #15191F, #15191F);
             position: relative;
             overflow: hidden;
@@ -353,10 +349,10 @@
 
         article.price-tags {
             padding: 1.5rem 1.25rem;
-            flex-basis: 31.6%;
+            flex-basis: 31.58%;
             border-radius: 1rem;
             border: 1px solid #15191F;
-            background: linear-gradient(0deg, #060A0F, #060A0F),
+            background: linear-gradient(0deg, $secondary_color, $secondary_color),
                 linear-gradient(0deg, #15191F, #15191F);
             position: relative;
             overflow: hidden;

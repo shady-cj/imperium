@@ -49,7 +49,7 @@ const index = () => {
                             We build website that  will adapt seamlessly to any screen, from desktops to smartphones.
                         </p>
                     </div>
-                    <img src={nftImg} alt="" />
+                    <img src={nftImg} alt="" loading="lazy" />
                     <div className="blur-circle-2">
                     </div>
                 </article>

@@ -2,6 +2,7 @@ import "./App.scss"
 import Home from "./pages/Home"
 import Services from "./pages/Services"
 import Benefits from "./pages/Benefits"
+import Projects from "./pages/Projects"
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <Home />
       <Services />
       <Benefits />
+      <Projects />
     </div>
   )
 }
