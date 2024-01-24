@@ -38,16 +38,26 @@ const index = () => {
             <div className="project-display">
                 <div className="project-display-card">
                     <ProjectCard tags={projectContents[0].tags} title={projectContents[0].title} description={projectContents[0].description} />
-                    <img src={valueIndustry} alt="" loading="lazy" />
+                    <div>
+                        <img src={valueIndustry} alt="" loading="lazy" />
+                    </div>
                 </div>
                 <div className="project-display-card">
-                    <img src={epicEats} alt="" loading="lazy" />
+                    <div>
+
+                        <img src={epicEats} alt="" loading="lazy" />
+                    </div>
+
                     <ProjectCard tags={projectContents[1].tags} title={projectContents[1].title} description={projectContents[1].description} />
 
                 </div>
                 <div className="project-display-card">
                     <ProjectCard tags={projectContents[2].tags} title={projectContents[2].title} description={projectContents[2].description} />
-                    <img src={nftsvg} alt="" loading="lazy" />
+                    <div>
+
+                        <img src={nftsvg} alt="" loading="lazy" />
+                    </div>
+
                 </div>
 
             </div>

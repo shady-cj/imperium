@@ -22,14 +22,27 @@
 
             gap: 1.5rem;
 
-            img {
-                flex: 1;
+            &>div {
                 border-radius: 1rem;
-                height: 20rem;
-                object-fit: cover;
+                height: 24rem;
                 aspect-ratio: 91/50;
+                overflow: hidden;
 
+                img {
+
+                    flex: 1;
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 1rem;
+                    transform: scale(1.11, 1.16) translate(-1.4rem, -1.6rem);
+                    object-fit: cover;
+                    object-position: 3.125rem 3.125rem;
+                    aspect-ratio: 91/50;
+
+                }
             }
+
+
         }
     }
 }
