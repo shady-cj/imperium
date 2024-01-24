@@ -5,6 +5,7 @@ import Benefits from "./pages/Benefits"
 import Projects from "./pages/Projects"
 import Pricing from "./pages/Pricing"
 import Process from "./pages/Process"
+import Faqs from "./pages/Faqs"
 function App() {
 
   return (
@@ -15,6 +16,7 @@ function App() {
       <Projects />
       <Pricing />
       <Process />
+      <Faqs />
     </div>
   )
 }
