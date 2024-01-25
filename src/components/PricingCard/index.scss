@@ -19,7 +19,8 @@
         justify-content: space-between;
         width: 100%;
 
-        :first-child {
+        &>:first-child {
+            flex-basis: 60%;
 
             h4 {
                 color: #FFF;
@@ -41,14 +42,15 @@
 
         &>:last-child {
             padding: 3px 8px;
-            min-width: 38%;
+            width: 7rem;
             display: flex;
-            gap: 8px;
+            gap: 0.5rem;
             height: fit-content;
             border-radius: 16px;
             border: 0.5px solid #16273D;
             background: #12171E;
             align-items: center;
+            justify-content: space-evenly;
 
             :first-child {
                 display: inline-block;
