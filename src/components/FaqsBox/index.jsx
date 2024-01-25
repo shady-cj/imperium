@@ -7,6 +7,9 @@ const index = ({ question, answer }) => {
         <article className="question-box">
             <p>{question}</p>
             <img src={plus} alt="" />
+            <div className="answer-box">
+
+            </div>
         </article>
 
     )
