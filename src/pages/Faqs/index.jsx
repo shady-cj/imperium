@@ -1,6 +1,33 @@
 import "./index.scss";
 import magicPen from "../../assets/magicpen-yellow.svg";
 import FaqsBox from "../../components/FaqsBox";
+
+const faqs = [
+    {
+        question: "What services do you offer exactly?",
+        answer: ""
+    },
+    {
+        question: "How long does it take to build a website?",
+        answer: ""
+    },
+    {
+        question: "What if I need changes after my website is live?",
+        answer: ""
+    },
+    {
+        question: "Do you have pricing packages? I'm on a tight budget.",
+        answer: ""
+    },
+    {
+        question: "What happens after my website is launched?",
+        answer: ""
+    },
+    {
+        question: "What kind of support do you offer?",
+        answer: ""
+    },
+]
 const index = () => {
     return (
         <section className="faqs-container">
@@ -18,12 +45,7 @@ const index = () => {
                 </p>
             </div>
             <div className="question-box-container">
-                <FaqsBox />
-                <FaqsBox />
-                <FaqsBox />
-                <FaqsBox />
-                <FaqsBox />
-                <FaqsBox />
+                {faqs.map(f => <FaqsBox key={f.question} {...f} />)}
             </div>
         </section>
     )

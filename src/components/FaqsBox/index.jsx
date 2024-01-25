@@ -1,11 +1,11 @@
 import "./index.scss";
 import plus from "../../assets/plus.svg";
 
-const index = () => {
+const index = ({ question, answer }) => {
     return (
 
         <article className="question-box">
-            <p>What services do you offer exactly?</p>
+            <p>{question}</p>
             <img src={plus} alt="" />
         </article>
 
