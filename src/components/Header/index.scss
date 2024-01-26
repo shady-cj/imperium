@@ -7,6 +7,9 @@ header {
     align-items: center;
     justify-content: space-between;
 
+
+
+
     .logo-wrapper {
         display: flex;
         width: fit-content;
@@ -15,7 +18,9 @@ header {
         padding: 0 6px;
         border: 1px solid #030B13;
         border-radius: 0.88rem;
-        background: linear-gradient(0deg, #030B13, #030B13), linear-gradient(0deg, #060A0F, #060A0F);
+        background: #030B13;
+
+
 
         img {
             width: 1.5rem;
@@ -28,6 +33,17 @@ header {
             color: $tertiary_color_tint;
 
         }
+
+        // @media screen and (max-width: 1024px) {
+
+        //     img {
+        //         width: 1.1rem;
+        //     }
+
+        //     span {
+        //         font-size: 0.9rem;
+        //     }
+        // }
     }
 
     nav {
@@ -52,8 +68,27 @@ header {
 
         .schedule-btn {
             @include schedule-btn;
+            margin-left: 3.5rem;
+
+            @media screen and (max-width: 1024px) {
+                margin-left: 1rem;
+            }
         }
 
+        @media screen and (max-width: 1024px) {
+            gap: 1rem;
+
+            .lg-screen-display {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .nav-menu-item {
+                display: none;
+            }
+
+        }
 
     }
 }

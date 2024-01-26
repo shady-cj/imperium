@@ -3,4 +3,19 @@
     margin: 0 auto;
     min-height: 100vh;
     padding: 1.6rem 7.5rem;
+
+    @media screen and (max-width: 1024px) {
+
+        padding: 1.6rem 5rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 1.6rem 3.5rem;
+    }
+
+    @media screen and (max-width: 600px) {
+        padding: 1.6rem 2rem;
+    }
+
+
 }

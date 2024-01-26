@@ -19,8 +19,13 @@
         font-weight: 500;
         letter-spacing: 0.08px;
         width: fit-content;
+
         // text-decoration-line: underline;
+        @media screen and (max-width: 900px) {
+            margin-top: 0.5rem;
+        }
     }
+
 
     .project-info {
         .project-tags {
@@ -62,6 +67,8 @@
                 letter-spacing: 0.24px;
                 max-width: 350px;
                 margin-top: 0.5rem;
+
+
             }
         }
     }

@@ -6,6 +6,7 @@
     padding: 4rem;
     border-radius: 1.5rem;
     margin-top: 2rem;
+    border: 1px solid #101316;
 
     .project-content-header {
         @include section-content-header;
@@ -21,6 +22,7 @@
             display: flex;
 
             gap: 1.5rem;
+
 
             &>div {
                 border-radius: 1rem;
@@ -39,10 +41,43 @@
                     object-position: 3.125rem 3.125rem;
                     aspect-ratio: 91/50;
 
+
+                    @media screen and (max-width: 1200px) {
+                        transform: scale(1.2, 1.16) translate(-1.4rem, -1.6rem);
+                    }
+
                 }
+
+                @media screen and (max-width: 900px) {
+                    height: 18rem;
+
+                    img {
+
+                        transform: scale(1.23) translate(-1.4rem, -1.6rem);
+                    }
+                }
+
+
             }
 
 
         }
+
+        @media screen and (max-width: 900px) {
+
+            &>div.project-display-card {
+                gap: 0;
+                flex-direction: column;
+
+            }
+
+            &>:first-child,
+            &>:last-child {
+                flex-direction: column-reverse !important;
+            }
+
+        }
+
+
     }
 }

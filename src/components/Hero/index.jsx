@@ -3,6 +3,7 @@ import arrowLeft from "../../assets/arrow-left.svg"
 import bobPics from "../../assets/bob-pics.jpg";
 import heroImg from "../../assets/hero-img.png";
 import heroVid from "../../assets/hero-vid.mp4";
+import mobileHeroImg from "../../assets/mobile-hero-img.jpg";
 const index = () => {
     return (
         <div className="hero-container">
@@ -34,10 +35,11 @@ const index = () => {
                 </div>
             </div>
 
-            <div className="hero-video">
-                <video muted loop autoPlay poster={heroImg}>
+            <div className="hero-display">
+                <video className="hero-video" muted loop autoPlay poster={heroImg}>
                     <source src={heroVid} type="video/mp4" />
                 </video>
+                <img className="hero-img" src={mobileHeroImg} alt="" />
             </div>
 
         </div>
