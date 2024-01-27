@@ -59,6 +59,16 @@ const index = () => {
                         </div>
 
                     </div>
+                    <div className="process-publish-display mobile-view">
+                        <div>
+                            <div className="publish-header">
+                                <span>Publish</span>
+                            </div>
+                            <button>Start a Project <img src={arrowLeft} alt="" /></button>
+
+                        </div>
+                        <div className="blur-circle-5"></div>
+                    </div>
                 </div>
                 <div className="process-card-section-2">
                     <div className="process-publish-display">
@@ -73,6 +83,17 @@ const index = () => {
                     </div>
                     <ProcessCard step={processes[2].step} title={processes[2].title} desc={processes[2].desc} />
                     <ProcessCard step={processes[3].step} title={processes[3].title} desc={processes[3].desc} />
+                    <div className="process-misc mobile-view">
+                        <div>
+
+                            <div className="publish-header">
+                                <span>Publish</span>
+                            </div>
+                            <div className="circle-svg"></div>
+                            <img src={star} alt="" />
+                        </div>
+
+                    </div>
                     <ProcessCard step={processes[4].step} title={processes[4].title} desc={processes[4].desc} />
                 </div>
             </div>
