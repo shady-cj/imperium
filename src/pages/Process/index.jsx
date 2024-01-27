@@ -41,7 +41,7 @@ const index = () => {
                     <img src={magicPen} alt="" />
                     PROCESS
                 </h6>
-                <h2>A Look at How We Bring<br /> <span>Your Vision to Life</span>
+                <h2>A Look at How We Bring <span>Your Vision to Life</span>
                 </h2>
             </div>
             <div className="process-cards">

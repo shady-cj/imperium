@@ -53,7 +53,7 @@ const index = () => {
                 PRICING
             </h6>
             <h2>
-                Select From Our <br /> Offering to <span>Get Started</span>
+                Select From Our Offering to <span>Get Started</span>
             </h2>
         </div>
         <div className="pricing-display">

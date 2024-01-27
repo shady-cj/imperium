@@ -18,10 +18,15 @@
     .pricing-display {
         margin-top: 4.5rem;
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         gap: 1.25rem;
         justify-content: center;
-        overflow-x: auto;
+
+        @media screen and (max-width: 600px) {
+            // transform: translateX(0vw);
+            // scroll-snap-type: x mandatory;
+            flex-direction: column;
+        }
 
         @media screen and (max-width: 1200px) {
             gap: 1rem;
