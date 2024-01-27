@@ -1,9 +1,10 @@
 import "./index.scss"
 import tick from "../../assets/tick.svg";
 import arrowLeft from "../../assets/arrow-left.svg";
+import { motion } from 'framer-motion';
 const index = ({ title, price, slots, packageBenefits }) => {
     return (
-        <article className="pricing-card">
+        <motion.article className="pricing-card" initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ ease: "easeInOut", duration: 1 }}>
             <div className="pricing-card-title">
                 <div>
                     <h4>{title}</h4>
@@ -33,7 +34,7 @@ const index = ({ title, price, slots, packageBenefits }) => {
                 Start a Project
                 <img src={arrowLeft} alt="" />
             </a>
-        </article>
+        </motion.article>
     )
 }
 

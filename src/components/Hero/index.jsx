@@ -4,19 +4,20 @@ import bobPics from "../../assets/bob-pics.jpg";
 import heroImg from "../../assets/hero-img.png";
 import heroVid from "../../assets/hero-vid.mp4";
 import mobileHeroImg from "../../assets/mobile-hero-img.jpg";
+import { motion } from "framer-motion";
 const index = () => {
     return (
         <div className="hero-container">
             <div className="hero-heading__text">
-                <h3>
+                <motion.h3 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ type: "spring", delay: 1 }}>
                     Your Trusted Agency
-                </h3>
-                <h3>
+                </motion.h3>
+                <motion.h3 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ type: "spring", delay: 1 }}>
                     for Crafting Websites
-                </h3>
-                <h3>
+                </motion.h3>
+                <motion.h3 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ type: "spring", delay: 1 }}>
                     that Converts
-                </h3>
+                </motion.h3>
             </div>
             <div className="hero-paragraph__text">
                 <p>Taking charge of both design and development, we craft websites <br /> that convert like spells without the hefty price tag.</p>

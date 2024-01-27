@@ -8,6 +8,7 @@ import Process from "./pages/Process"
 import Faqs from "./pages/Faqs"
 import Footer from "./pages/Footer"
 
+
 function App() {
 
   return (

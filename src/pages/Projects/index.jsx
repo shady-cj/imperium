@@ -4,6 +4,7 @@ import ProjectCard from "../../components/ProjectCard";
 import epicEats from "../../assets/epiceats.jpg";
 import valueIndustry from "../../assets/value-industry.jpg";
 import nftsvg from "../../assets/nftsvg.svg";
+import { motion } from "framer-motion"
 
 
 const projectContents = [
@@ -39,29 +40,28 @@ const index = () => {
                 </h2>
             </div>
             <div className="project-display">
-                <div className="project-display-card">
+                <motion.div className="project-display-card" transition={{ staggerChildren: 0.5 }}>
                     <ProjectCard tags={projectContents[0].tags} title={projectContents[0].title} description={projectContents[0].description} link={projectContents[0].link} />
-                    <div>
+                    <motion.div initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
                         <img src={valueIndustry} alt="" loading="lazy" />
-                    </div>
-                </div>
-                <div className="project-display-card">
-                    <div>
+                    </motion.div>
+                </motion.div>
+                <motion.div className="project-display-card" transition={{ staggerChildren: 0.5 }}>
+                    <motion.div initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
 
                         <img src={epicEats} alt="" loading="lazy" />
-                    </div>
+                    </motion.div>
 
                     <ProjectCard tags={projectContents[1].tags} title={projectContents[1].title} description={projectContents[1].description} link={projectContents[1].link} />
 
-                </div>
-                <div className="project-display-card">
+                </motion.div>
+                <motion.div className="project-display-card" transition={{ staggerChildren: 0.5 }}>
                     <ProjectCard tags={projectContents[2].tags} title={projectContents[2].title} description={projectContents[2].description} link={projectContents[2].link} />
-                    <div>
-
+                    <motion.div initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
                         <img src={nftsvg} alt="" loading="lazy" />
-                    </div>
+                    </motion.div>
 
-                </div>
+                </motion.div>
 
             </div>
         </section>

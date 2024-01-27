@@ -1,10 +1,10 @@
 import "./index.scss"
 import arrowUp from "../../assets/arrow-up-left.svg";
-
+import { motion } from "framer-motion";
 
 const index = ({ icon, h2Content, pContent }) => {
   return (
-    <article className="service-card">
+    <motion.article className="service-card" initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ type: "spring" }}>
       <div>
 
         <div className="card-icon">
@@ -28,7 +28,7 @@ const index = ({ icon, h2Content, pContent }) => {
 
       </a>
 
-    </article>
+    </motion.article>
   )
 }
 

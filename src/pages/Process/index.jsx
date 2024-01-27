@@ -3,6 +3,7 @@ import magicPen from "../../assets/magicpen-blue.svg"
 import ProcessCard from "../../components/ProcessCard";
 import star from "../../assets/star.svg";
 import arrowLeft from "../../assets/arrow-left.svg";
+import { motion } from "framer-motion";
 
 const processes = [
     {
@@ -33,7 +34,7 @@ const processes = [
 ]
 const index = () => {
     return (
-        <section className="process-container">
+        <motion.section className="process-container" initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ type: "spring" }}>
             <div className="blur-circle-6"></div>
             <div className="process-content-header">
 
@@ -97,7 +98,7 @@ const index = () => {
                     <ProcessCard step={processes[4].step} title={processes[4].title} desc={processes[4].desc} />
                 </div>
             </div>
-        </section>
+        </motion.section>
     )
 }
 
