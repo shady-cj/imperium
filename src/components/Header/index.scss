@@ -56,11 +56,16 @@ header {
             font-size: 1rem;
             color: #999999;
             text-decoration: none;
+            transition: color 0.4s;
 
             :active,
             :focus,
             :visited {
                 color: #999999;
+            }
+
+            &:hover {
+                color: #FFFFFF;
             }
 
 
@@ -69,6 +74,14 @@ header {
         .schedule-btn {
             @include schedule-btn;
             margin-left: 3.5rem;
+            transition: all 0.4s;
+
+            &:hover {
+                background-color: #05101C;
+                border: 1px solid #061525;
+                color: #BED8F4;
+                transform: scale(1.05);
+            }
 
             @media screen and (max-width: 1024px) {
                 margin-left: 1rem;

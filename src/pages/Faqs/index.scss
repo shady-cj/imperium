@@ -28,6 +28,14 @@
         flex-flow: row wrap;
 
         gap: 1rem;
+
+        @media screen and (max-width: 600px) {
+            flex-direction: column;
+        }
+
+        @media screen and (max-width: 1100px) {
+            padding: 0;
+        }
     }
 
 }

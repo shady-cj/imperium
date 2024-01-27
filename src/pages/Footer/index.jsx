@@ -12,7 +12,7 @@ const index = () => {
 
                 </div>
                 <p>Want to make sure we&rsquo;re the right fit? Schedule a discovery call!</p>
-                <button>Schedule a Call</button>
+                <a href="https://calendly.com/imperiumdesignsinfo-e3u/30min" target="_blank" rel="noreferrer">Schedule a Call</a>
             </div>
             <div className="footer-subsection footer-navigation">
                 <div>
@@ -34,9 +34,9 @@ const index = () => {
                 </div>
                 <h2>Contact Us</h2>
                 <p>
-                    Imperium@info.com
+                    info@imperiumdesigns.ca
                 </p>
-                <button>Schedule a Call</button>
+                <a href="https://calendly.com/imperiumdesignsinfo-e3u/30min" target="_blank" rel="noreferrer">Schedule a Call</a>
             </div>
             <div className="footer-subsection footer-creators">
                 <div>

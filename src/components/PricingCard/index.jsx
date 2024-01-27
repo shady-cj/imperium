@@ -29,10 +29,10 @@ const index = ({ title, price, slots, packageBenefits }) => {
 
                 </div>
             </div>
-            <button>
+            <a href="https://forms.gle/5L2KBSWd5mmQKgEZ8" target="_blank" rel="noreferrer">
                 Start a Project
                 <img src={arrowLeft} alt="" />
-            </button>
+            </a>
         </article>
     )
 }

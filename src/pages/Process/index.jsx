@@ -64,7 +64,7 @@ const index = () => {
                             <div className="publish-header">
                                 <span>Publish</span>
                             </div>
-                            <button>Start a Project <img src={arrowLeft} alt="" /></button>
+                            <a href="https://forms.gle/5L2KBSWd5mmQKgEZ8" target="_blank" rel="noreferrer">Start a Project <img src={arrowLeft} alt="" /></a>
 
                         </div>
                         <div className="blur-circle-5"></div>
@@ -76,7 +76,7 @@ const index = () => {
                             <div className="publish-header">
                                 <span>Publish</span>
                             </div>
-                            <button>Start a Project <img src={arrowLeft} alt="" /></button>
+                            <a href="https://forms.gle/5L2KBSWd5mmQKgEZ8" target="_blank" rel="noreferrer">Start a Project <img src={arrowLeft} alt="" /></a>
 
                         </div>
                         <div className="blur-circle-5"></div>

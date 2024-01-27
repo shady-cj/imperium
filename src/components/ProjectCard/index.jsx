@@ -1,7 +1,7 @@
 import "./index.scss"
 
 
-const index = ({ tags, title, description }) => {
+const index = ({ tags, title, description, link }) => {
     return (
         <article className="project-card-container">
             <div className="project-info">
@@ -16,7 +16,7 @@ const index = ({ tags, title, description }) => {
                     </p>
                 </div>
             </div>
-            <a href="">Read Case Study</a>
+            <a href={link} target="_blank" rel="noreferrer">Read Case Study</a>
 
         </article>
     )

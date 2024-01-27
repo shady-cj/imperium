@@ -23,8 +23,8 @@ const index = () => {
             </div>
             <div className="hero-contact">
                 <div>
-                    <a className="start-a-project">Start a Project <img src={arrowLeft} alt="" /></a>
-                    <a className="schedule-a-call">Schedule a Call</a>
+                    <a href="https://forms.gle/5L2KBSWd5mmQKgEZ8" target="_blank" rel="noreferrer" className="start-a-project">Start a Project <img src={arrowLeft} alt="" /></a>
+                    <a href="https://calendly.com/imperiumdesignsinfo-e3u/30min" target="_blank" rel="noreferrer" className="schedule-a-call">Schedule a Call</a>
                 </div>
                 <div className="hero-testimony-section">
                     <img src={bobPics} loading="lazy" alt="Bob" />

@@ -15,7 +15,7 @@ const index = () => {
                 <a className="nav-menu-item" href="">Project</a>
                 <a className="nav-menu-item lg-screen-display" href="">Pricing</a>
                 <a className="nav-menu-item lg-screen-display" href="">Process</a>
-                <a href="" className="schedule-btn">Schedule a Call</a>
+                <a href="https://calendly.com/imperiumdesignsinfo-e3u/30min" className="schedule-btn" target="_blank" rel="noreferrer">Schedule a Call</a>
             </nav>
         </header>
 

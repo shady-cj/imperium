@@ -194,7 +194,7 @@
 
                     }
 
-                    button {
+                    a {
                         position: absolute;
                         left: 50%;
                         top: 50%;
@@ -213,6 +213,13 @@
                         font-size: 17px;
                         font-weight: 500;
                         letter-spacing: 0.085px;
+                        text-decoration: none;
+                        cursor: pointer;
+                        transition: background-color 0.4s;
+
+                        &:hover {
+                            background-color: #CCA63D;
+                        }
 
                         @media screen and (max-width: 950px) {
                             width: 150px;
@@ -249,8 +256,8 @@
             }
         }
 
-        .process-card-section-1 {}
+        // .process-card-section-1 {}
 
-        .process-card-section-2 {}
+        // .process-card-section-2 {}
     }
 }

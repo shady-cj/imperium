@@ -17,7 +17,7 @@ const index = ({ icon, h2Content, pContent }) => {
         </div>
       </div>
 
-      <a href="">
+      <a href="https://forms.gle/5L2KBSWd5mmQKgEZ8" target="_blank" rel="noreferrer">
         <span>
           Start a Project
         </span>

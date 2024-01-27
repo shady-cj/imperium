@@ -89,9 +89,15 @@
         align-items: center;
         text-decoration: none;
         border-radius: 8px;
-        background: #141310;
+        background-color: #141310;
         color: $tertiary_color;
+        transition: transform 0.4s, background-color 0.4s;
+
         // justify-self: flex-end;
+        &:hover {
+            background-color: lighten(#141310, 1%);
+            transform: scale(1.05);
+        }
 
         div {
             width: 1.25rem;

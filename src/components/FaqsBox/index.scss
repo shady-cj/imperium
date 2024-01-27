@@ -21,10 +21,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 0.5rem;
+
 
         p {
             color: #F3FCFF;
-            text-align: center;
+            // text-align: center;
             font-family: $primary_font_regular;
             font-size: 0.9rem;
             font-weight: 400;
