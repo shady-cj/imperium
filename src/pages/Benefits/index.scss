@@ -17,6 +17,35 @@
         gap: 1.5rem;
         padding: 0 4rem;
 
+        // width: 40px;
+
+
+        @media screen and (max-width: 1200px) {
+            gap: 1rem;
+        }
+
+        @media screen and (max-width: 1024px) {
+            padding: 0 2rem;
+        }
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            margin-top: 3rem;
+            // padding: 0 4rem;
+
+            // article {
+            //     flex: 1;
+            // }
+        }
+
+        @media screen and (max-width: 600px) {
+            article {
+                width: 100% !important;
+            }
+
+            padding: 0 1rem;
+        }
+
         article.fast-time-card {
             padding: 24px 20px 16px 20px;
             display: flex;
@@ -86,11 +115,40 @@
                         font-family: $satoshi;
                         font-weight: 500;
                     }
+
+                    @media screen and (max-width: 1000px) {
+                        h5 {
+                            font-size: 1.3rem;
+
+                        }
+
+                        span {
+                            font-size: 0.9rem;
+                        }
+                    }
+
+                    @media screen and (max-width: 600px) {
+                        h5 {
+                            font-size: 2rem;
+                        }
+
+                        span {
+                            font-size: 1.25rem;
+                        }
+                    }
                 }
 
                 img {
                     width: 83.2px;
                     height: auto;
+
+                    @media screen and (max-width: 1000px) {
+                        width: 60px;
+                    }
+
+                    @media screen and (max-width: 600px) {
+                        width: 80px;
+                    }
 
                     // aspect-ratio: 1/1;
                 }
@@ -110,6 +168,13 @@
             flex: 1;
             min-width: 60%;
             position: relative;
+
+
+
+            @media screen and (max-width: 600px) {
+                flex-direction: column;
+                padding-right: 20px;
+            }
 
             .blur-circle-2 {
                 position: absolute;
@@ -191,12 +256,21 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    justify-content: center;
                     gap: 0.3rem;
 
                     img {
                         width: 4rem;
                         height: auto;
                         aspect-ratio: 1;
+
+                        @media screen and (max-width: 1000px) {
+                            width: 3rem;
+                        }
+
+                        @media screen and (max-width: 600px) {
+                            width: 4rem;
+                        }
                     }
 
                     span {
@@ -207,12 +281,22 @@
                         font-weight: 400;
                         line-height: normal;
                         letter-spacing: 0.07px;
+
+                        @media screen and (max-width: 1000px) {
+                            font-size: 0.7rem;
+                        }
+
+                        @media screen and (max-width: 600px) {
+                            font-size: 0.8rem;
+                        }
                     }
                 }
             }
 
             .lt-content {
                 margin-top: 2rem;
+                position: relative;
+                z-index: 1;
 
                 h2 {
                     color: #F5F5F5;
