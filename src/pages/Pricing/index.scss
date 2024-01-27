@@ -4,15 +4,28 @@
 .pricing-container {
     margin-top: 7.5rem;
     padding: 0 1rem;
+    // overview
+    // overflow-x: hidden;
 
     .pricing-content-header {
         @include section-content-header;
     }
 
+    @media screen and (max-width: 768px) {
+        padding: 0;
+    }
+
     .pricing-display {
         margin-top: 4.5rem;
         display: flex;
+        flex-wrap: nowrap;
         gap: 1.25rem;
         justify-content: center;
+        overflow-x: auto;
+
+        @media screen and (max-width: 1200px) {
+            gap: 1rem;
+        }
+
     }
 }
