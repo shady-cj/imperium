@@ -13,7 +13,7 @@ const Index = ({ question, answer }) => {
                 <p>{question}</p>
                 <img src={boxOpened ? closeIcon : plus} alt="" onClick={() => setBoxOpened(prev => !prev)} />
             </div>
-            <motion.div initial={{ height: "0rem" }} animate={boxOpened ? { height: "10rem" } : { height: "0rem" }} transition={{ type: "spring", ease: "ease-in-out" }}>
+            <motion.div initial={{ height: "0rem" }} animate={boxOpened ? { height: "11.5rem" } : { height: "0rem" }} transition={{ type: "spring", ease: "ease-in-out" }}>
 
                 <div className={`answer-box`}>
                     {answer}
