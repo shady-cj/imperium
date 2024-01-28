@@ -13,7 +13,7 @@ const BenefitNft = React.lazy(() => import("../../components/BenefitNft"))
 const Index = () => {
 
     const benefitRef = React.useRef(null);
-    const benefitInView = useInView(benefitRef);
+    const benefitInView = useInView(benefitRef, { once: true });
 
     return (
         <section id="benefits" ref={benefitRef} className="benefit-container">

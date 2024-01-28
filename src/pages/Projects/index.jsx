@@ -28,7 +28,7 @@ const projectContents = [
 ]
 const Index = () => {
     const projectRef = React.useRef(null);
-    const projectInView = useInView(projectRef);
+    const projectInView = useInView(projectRef, { once: true });
     return (
         <section id="projects" className="project-container" ref={projectRef}>
             <div className="project-content-header">

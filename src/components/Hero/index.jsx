@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 const HeroMedia = React.lazy(() => import("../HeroMedia"));
 const Index = () => {
     const frameRef = useRef(null);
-    const frameInView = useInView(frameRef);
+    const frameInView = useInView(frameRef, { once: true });
 
     return (
         <div className="hero-container">
