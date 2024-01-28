@@ -1,16 +1,22 @@
+import React from "react";
 import "./index.scss";
 import magicPen from "../../assets/magicpen-yellow.svg";
 import stopwatch from "../../assets/stopwatch.svg";
-import nftImg from "../../assets/nft-img.jpg";
 import svgLines1 from "../../assets/svg-lines1.svg";
 import svgLines2 from "../../assets/svg-lines2.svg";
 import svg100 from "../../assets/svg-100.svg";
 import invoice from "../../assets/invoice.svg";
 import polygon from "../../assets/polygon.svg";
-import { motion } from "framer-motion";
-const index = () => {
+import { motion, useInView } from "framer-motion";
+const BenefitNft = React.lazy(() => import("../../components/BenefitNft"))
+
+const Index = () => {
+
+    const benefitRef = React.useRef(null);
+    const benefitInView = useInView(benefitRef);
+
     return (
-        <section className="benefit-container">
+        <section id="benefits" ref={benefitRef} className="benefit-container">
             <div className="benefit-content-header">
 
                 <h6>
@@ -50,7 +56,9 @@ const index = () => {
                             We build website that  will adapt seamlessly to any screen, from desktops to smartphones.
                         </p>
                     </div>
-                    <img src={nftImg} alt="" loading="lazy" />
+                    <React.Suspense fallback={<div></div>}>
+                        {benefitInView && <BenefitNft />}
+                    </React.Suspense>
                     <div className="blur-circle-2">
                     </div>
                 </motion.article>
@@ -128,4 +136,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Index

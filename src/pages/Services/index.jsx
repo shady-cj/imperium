@@ -29,7 +29,7 @@ const contents = [
 ]
 const index = () => {
     return (
-        <section className="service-container">
+        <section id="services" className="service-container">
             <div className="service-content-header">
 
                 <h6>

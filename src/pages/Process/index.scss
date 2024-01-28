@@ -2,8 +2,8 @@
 @import "../../styles/mixins";
 
 .process-container {
-
-    padding: 6rem 7.5rem;
+    margin-top: 3rem;
+    padding: 3rem 7.5rem;
     position: relative;
 
 
@@ -20,7 +20,7 @@
     }
 
     @media screen and (max-width: 950px) {
-        padding: 6rem 4rem;
+        padding: 3rem 4rem;
 
         .blur-circle-6 {
             left: 12rem;
@@ -28,11 +28,11 @@
     }
 
     @media screen and (max-width: 768px) {
-        padding: 6rem 1rem;
+        padding: 3rem 1rem;
     }
 
     @media screen and (max-width: 600px) {
-        padding: 6rem 0;
+        padding: 3rem 0;
     }
 
 

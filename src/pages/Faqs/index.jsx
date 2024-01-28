@@ -33,7 +33,7 @@ Regular website maintenance and updates, Security monitoring and protection,
 ]
 const index = () => {
     return (
-        <section className="faqs-container">
+        <section id="faqs" className="faqs-container">
             <div className="faqs-content-header">
 
                 <h6>

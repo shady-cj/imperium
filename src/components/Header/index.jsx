@@ -10,11 +10,11 @@ const index = () => {
                 <span>Imperium</span>
             </div>
             <nav>
-                <a className="nav-menu-item" href="">Services</a>
-                <a className="nav-menu-item" href="">Why Us</a>
-                <a className="nav-menu-item" href="">Project</a>
-                <a className="nav-menu-item lg-screen-display" href="">Pricing</a>
-                <a className="nav-menu-item lg-screen-display" href="">Process</a>
+                <a className="nav-menu-item" href="#services">Services</a>
+                <a className="nav-menu-item" href="#benefits">Why Us</a>
+                <a className="nav-menu-item" href="#projects">Project</a>
+                <a className="nav-menu-item lg-screen-display" href="#pricing">Pricing</a>
+                <a className="nav-menu-item lg-screen-display" href="#process">Process</a>
                 <a href="https://calendly.com/imperiumdesignsinfo-e3u/30min" className="schedule-btn" target="_blank" rel="noreferrer">Schedule a Call</a>
             </nav>
         </header>

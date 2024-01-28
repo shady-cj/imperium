@@ -1,13 +1,13 @@
 
 import epicEats from "../assets/epiceats.jpg";
 import valueIndustry from "../assets/value-industry.jpg";
-import nftsvg from "../assets/nftsvg.svg";
+import nft from "../assets/nft-marketplace.jpg";
 
 const ProjectImages = ({ title }) => {
     const mapImg = {
         "Value Industry": valueIndustry,
         "EpicEats": epicEats,
-        "NFT Dashboard": nftsvg
+        "NFT Dashboard": nft
 
     }
     return (

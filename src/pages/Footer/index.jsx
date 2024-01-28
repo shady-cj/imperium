@@ -5,7 +5,7 @@ import call from "../../assets/call.svg";
 import path from "../../assets/path.svg";
 const index = () => {
     return (
-        <section className="footer-container">
+        <section id="footer" className="footer-container">
             <div className="footer-subsection footer-contact">
                 <div>
                     <img src={call} alt="" />

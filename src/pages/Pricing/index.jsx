@@ -45,7 +45,7 @@ const pricingContents = [
     }
 ]
 const index = () => {
-    return <section className="pricing-container">
+    return <section id="pricing" className="pricing-container">
         <div className="pricing-content-header">
 
             <h6>

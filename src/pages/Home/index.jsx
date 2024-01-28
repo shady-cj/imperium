@@ -4,7 +4,7 @@ import Hero from "../../components/Hero"
 
 const index = () => {
     return (
-        <section className="home-wrapper">
+        <section id="home" className="home-wrapper">
             <Header />
             <Hero />
         </section>

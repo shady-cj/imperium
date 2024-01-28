@@ -30,7 +30,7 @@ const Index = () => {
     const projectRef = React.useRef(null);
     const projectInView = useInView(projectRef);
     return (
-        <section className="project-container" ref={projectRef}>
+        <section id="projects" className="project-container" ref={projectRef}>
             <div className="project-content-header">
                 <h6>
                     <img src={magicPen} alt="" />
