@@ -34,7 +34,7 @@ const index = () => {
                 </div>
                 <h2>Contact Us</h2>
                 <p>
-                    info@imperiumdesigns.ca
+                    <a href="mailto:info@imperiumdesigns.ca"> info@imperiumdesigns.ca</a>
                 </p>
                 <a href="https://calendly.com/imperiumdesignsinfo-e3u/30min" target="_blank" rel="noreferrer">Schedule a Call</a>
             </div>
@@ -46,7 +46,7 @@ const index = () => {
                 <h2>Made with love by</h2>
                 <div className="footer-flex">
                     <span>Tiago - Owner</span>
-                    <span>Praise - UI Designer / Web Developer</span>
+                    <span><a href="https://www.behance.net/LekanPraise?isa0=1&log_shim_removal=1#" target="_blank" rel="noreferrer">Praise - UI Designer / Web Developer</a></span>
                 </div>
             </div>
 
