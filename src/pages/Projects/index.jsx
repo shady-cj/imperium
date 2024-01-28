@@ -1,11 +1,10 @@
 import "./index.scss";
 import magicPen from "../../assets/magicpen-blue.svg";
 import ProjectCard from "../../components/ProjectCard";
-import epicEats from "../../assets/epiceats.jpg";
-import valueIndustry from "../../assets/value-industry.jpg";
-import nftsvg from "../../assets/nftsvg.svg";
-import { motion } from "framer-motion"
+import React from "react";
+import { motion, useInView } from "framer-motion"
 
+const ProjectImages = React.lazy(() => import("../../components/ProjectImages"));
 
 const projectContents = [
     {
@@ -27,9 +26,11 @@ const projectContents = [
         link: "https://www.behance.net/gallery/177129773/NFT-marketplace-dashboard"
     }
 ]
-const index = () => {
+const Index = () => {
+    const projectRef = React.useRef(null);
+    const projectInView = useInView(projectRef);
     return (
-        <section className="project-container">
+        <section className="project-container" ref={projectRef}>
             <div className="project-content-header">
                 <h6>
                     <img src={magicPen} alt="" />
@@ -43,13 +44,16 @@ const index = () => {
                 <motion.div className="project-display-card" transition={{ staggerChildren: 0.5 }}>
                     <ProjectCard tags={projectContents[0].tags} title={projectContents[0].title} description={projectContents[0].description} link={projectContents[0].link} />
                     <motion.div initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-                        <img src={valueIndustry} alt="" loading="lazy" />
+                        <React.Suspense fallback={<div></div>}>
+                            {projectInView && <ProjectImages title={projectContents[0].title} />}
+                        </React.Suspense>
                     </motion.div>
                 </motion.div>
                 <motion.div className="project-display-card" transition={{ staggerChildren: 0.5 }}>
                     <motion.div initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-
-                        <img src={epicEats} alt="" loading="lazy" />
+                        <React.Suspense fallback={<div></div>}>
+                            {projectInView && <ProjectImages title={projectContents[1].title} />}
+                        </React.Suspense>
                     </motion.div>
 
                     <ProjectCard tags={projectContents[1].tags} title={projectContents[1].title} description={projectContents[1].description} link={projectContents[1].link} />
@@ -58,7 +62,9 @@ const index = () => {
                 <motion.div className="project-display-card" transition={{ staggerChildren: 0.5 }}>
                     <ProjectCard tags={projectContents[2].tags} title={projectContents[2].title} description={projectContents[2].description} link={projectContents[2].link} />
                     <motion.div initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-                        <img src={nftsvg} alt="" loading="lazy" />
+                        <React.Suspense fallback={<div></div>}>
+                            {projectInView && <ProjectImages title={projectContents[2].title} />}
+                        </React.Suspense>
                     </motion.div>
 
                 </motion.div>
@@ -68,4 +74,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Index

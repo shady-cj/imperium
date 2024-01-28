@@ -1,11 +1,16 @@
 import "./index.scss"
+import React, { Suspense, useRef } from "react";
+import { useInView } from "framer-motion";
 import arrowLeft from "../../assets/arrow-left.svg"
 import bobPics from "../../assets/bob-pics.jpg";
 import heroImg from "../../assets/hero-img.png";
-import heroVid from "../../assets/hero-vid.mp4";
-import mobileHeroImg from "../../assets/mobile-hero-img.jpg";
+
 import { motion } from "framer-motion";
-const index = () => {
+const HeroMedia = React.lazy(() => import("../HeroMedia"));
+const Index = () => {
+    const frameRef = useRef(null);
+    const frameInView = useInView(frameRef);
+
     return (
         <div className="hero-container">
             <div className="hero-heading__text">
@@ -36,15 +41,18 @@ const index = () => {
                 </div>
             </div>
 
-            <div className="hero-display">
-                <video className="hero-video" muted loop autoPlay poster={heroImg}>
-                    <source src={heroVid} type="video/mp4" />
-                </video>
-                <img className="hero-img" src={mobileHeroImg} alt="" />
+            <div className="hero-display" ref={frameRef}>
+                <Suspense fallback={<img src={heroImg} />}>
+                    {
+                        frameInView && <HeroMedia />
+
+                    }
+                </Suspense>
+
             </div>
 
         </div>
     )
 }
 
-export default index
+export default Index
