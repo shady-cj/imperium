@@ -11,7 +11,7 @@ const ProjectImages = ({ title }) => {
 
     }
     return (
-        <img src={mapImg[title]} alt="" loading="lazy" />
+        <img src={mapImg[title]} alt="" />
     )
 }
 
