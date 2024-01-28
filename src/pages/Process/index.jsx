@@ -34,7 +34,7 @@ const processes = [
 ]
 const index = () => {
     return (
-        <motion.section id="process" className="process-container" initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ type: "spring", ease: "linear" }}>
+        <motion.section id="process" className="process-container" initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ type: "spring", ease: "linear", duration: 0 }}>
             <div className="blur-circle-6"></div>
             <div className="process-content-header">
 
