@@ -17,14 +17,14 @@
         background: #12171E;
         width: fit-content;
 
-        :first-child {
+        &>:first-child {
             width: 0.5rem;
             height: 0.5rem;
             border-radius: 50%;
             background-color: $tertiary_color;
         }
 
-        :last-child {
+        &>:last-child {
             color: $tertiary_color;
             font-family: $secondary_font_regular;
             font-size: 0.875rem;

@@ -69,7 +69,7 @@
             align-items: center;
             justify-content: space-evenly;
 
-            :first-child {
+            &>:first-child {
                 display: inline-block;
                 width: 0.5rem;
                 height: 0.5rem;
@@ -78,7 +78,7 @@
 
             }
 
-            :last-child {
+            &>:last-child {
                 color: #B3B3B3;
                 font-family: $secondary_font_regular;
                 font-size: 0.875rem;
@@ -119,14 +119,14 @@
                 gap: 1rem;
                 align-items: center;
 
-                :first-child {
+                &>:first-child {
                     width: 1rem;
                     height: 1rem;
                     border-radius: 50%;
                     background: #081B2F;
                 }
 
-                :last-child {
+                &>:last-child {
                     color: #D3E5F8;
                     font-family: $secondary_font_regular;
                     font-size: 0.9rem;
