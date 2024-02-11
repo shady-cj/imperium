@@ -22,7 +22,7 @@ const pricingContents = [
         price: "$3628",
         slots: 3,
         packageBenefits: [
-            "Up to 10 pages website",
+            "Up to 5 pages website",
             "Custom UI design and development",
             "Responsive web design",
             "Custom Integration and CMS",
@@ -35,7 +35,7 @@ const pricingContents = [
         price: "$4328",
         slots: 3,
         packageBenefits: [
-            "Up to 20 pages website",
+            "Up to 10 pages website",
             "Custom UI design and development",
             "Responsive web design",
             "Custom Integration and CMS",
