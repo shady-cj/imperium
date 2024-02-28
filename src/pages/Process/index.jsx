@@ -65,7 +65,7 @@ const index = () => {
                             <div className="publish-header">
                                 <span>Publish</span>
                             </div>
-                            <a href="https://forms.gle/5L2KBSWd5mmQKgEZ8" target="_blank" rel="noreferrer">Start a Project <img src={arrowLeft} alt="" /></a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7IGXHI_XiZ366iWfWm2KgbuBWL4hWtvXw5F2S0_D9FZPBPA/viewform" target="_blank" rel="noreferrer">Start a Project <img src={arrowLeft} alt="" /></a>
 
                         </div>
                         <div className="blur-circle-5"></div>
